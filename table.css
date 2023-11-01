@@ -1,0 +1,72 @@
+body {
+    background-color: #deecfa;
+}
+
+/* СТИЛИ ЭЛЕМЕНТОВ */
+
+/* главный контейнер */
+.container-element {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    /* grid-gap:20px ; отступы */
+}
+
+/* контейнер элемента */
+.element {
+    display: grid;
+    grid-template-columns: 80px 120px;
+    grid-template-areas:
+        'a  b'
+        'a  c'
+        'd  d'
+}
+/* задаём области к классам */
+.a {
+    grid-area: a;
+    text-align: left;
+    font-size: 40px;
+}
+
+.b {
+    grid-area: b;
+    text-align: right;
+    font-size: 15px;
+}
+.c {
+    grid-area: c;
+    text-align: right;
+    font-size: 15px;
+}
+.d {
+    grid-area: d;
+    font-size: 15px;
+}
+.item-1,.item-2 {
+    border: 1px solid black;
+    padding: 10px;
+}
+.item-1 {
+    background-color: rgb(213, 117, 186);
+}
+.item-2 {
+    background-color: rgb(255, 255, 33);
+}
+.a,.b,.d {
+    font-weight: bold;
+}
+
+
+/* СТИЛИ ТАБЛИЦЫ  */
+table,td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: 30px;
+    width: 800px;
+    margin: auto;
+}
+caption{
+    margin: 20px;
+}
+a:hover {
+    color: red;
+}
